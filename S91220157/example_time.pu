@@ -1,0 +1,23 @@
+@startuml example_time
+actor Gourd
+participant Line
+actor Geezer
+participant Sorter
+
+note over Sorter: 使用接口BubbleSorter
+Gourd --> Line: 站成一行
+Geezer <-- Sorter: 配置排序算法
+Geezer --> Line: 下令排序
+Line --> Geezer: 【Linable】待排(1/2)
+Geezer --> Sorter: 待排rank(2/2)
+Sorter --> Sorter: 计算排序方法
+Sorter --> Geezer: 排序指令集
+loop 排序
+Geezer --> Gourd: 按指令换位
+Gourd --> Geezer: 反馈
+Geezer <-- Line: 当前换位结果
+end
+Geezer --> BufferedWriter: 排序记录
+BufferedWriter --> BufferedWriter: 写result.txt
+
+@enduml

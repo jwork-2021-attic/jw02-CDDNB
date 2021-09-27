@@ -1,0 +1,62 @@
+@startuml example_class
+
+interface Sorter {
+    +load(int[] elements)
+    +sort()
+    +getPlan()
+}
+
+class BubbleSorter {
+    -int[] a
+    -String plan
+}
+
+BubbleSorter --|> Sorter
+
+interface Linable {
+    +setPosition(Position position)
+    +getPosition()
+    +getValue()
+}
+
+class Gourd {
+    -int r, g, b
+    -Position position
+    +{static} getGourdByRank(int rank)
+    +rank()
+    +swapPosition(Gourd another)
+}
+
+Gourd --|> Linable
+Gourd --> Position
+
+class Position {
+    -Linable linable
+    +setLinable()
+}
+
+class Line {
+    -Position[] positions
+    +put(Linable linable, int i)
+    +get(i)
+    +toString()
+    +toArray()
+}
+
+Position +-- Line
+Line --> Linable
+
+class Geezer {
+    -{static}Geezer theGeezer
+    +{static}Geezer getTheGeezer()
+    +Sorter theSorter
+    +setSorter(Sorter sorter)
+    +lineUp(Line line)
+    +parsePlan(String plan)
+    +execute(String step)
+}
+
+Geezer --> Sorter
+Geezer .> Gourd
+
+@enduml
