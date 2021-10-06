@@ -33,8 +33,8 @@ public class Scene {
 
         Snake theSnake = Snake.getTheGeezer();
 
-        //Sorter sorter = new BubbleSorter();
-        Sorter sorter = new QuickSorter();
+        Sorter sorter = new BubbleSorter();
+        //Sorter sorter = new QuickSorter();
 
         theSnake.setSorter(sorter);
 
