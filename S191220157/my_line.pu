@@ -1,0 +1,68 @@
+@startuml my_line.pu
+
+interface Sorter {
+    +load(int[] elements)
+    +sort()
+    +getPlan()
+}
+
+class BubbleSorter {
+    -int[] a
+    -String plan
+}
+
+class QuickSorter {
+    -int[] a
+    -String plan
+}
+
+BubbleSorter --|> Sorter
+QuickSorter --|> Sorter
+
+interface Linable {
+    +setPosition(Position position)
+    +getPosition()
+    +getValue()
+}
+
+class Goblin {
+    -int r, g, b
+    -Position position
+    +{static} getGourdByRank(int rank)
+    +rank()
+}
+
+Goblin --|> Linable
+Goblin --> Position
+
+class Position {
+    -Linable linable
+    +setLinable()
+}
+
+class Line {
+    -Position[] positions
+    +put(Linable linable, int i)
+    +get(i)
+    +toString()
+    +toArray()
+    +swapPosition(int lina1, int lina2)
+}
+
+Position +-- Line
+Line --> Linable
+
+class Snake {
+    -{static}Snake theSnake
+    +{static}Snake getTheSnake()
+    +Sorter theSorter
+    +setSorter(Sorter sorter)
+    +lineUp(Line line)
+    +parsePlan(String plan)
+    +execute(String step)
+}
+
+Snake --> Sorter
+Snake .> Goblin
+
+@enduml

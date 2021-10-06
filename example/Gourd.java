@@ -4,7 +4,7 @@ import example.Line.Position;
 
 public enum Gourd implements Linable {
 
-    ONE(204, 0, 0),
+    ONE(204/8, 0, 0),
 
     TWO(255, 165, 0),
 
@@ -14,9 +14,9 @@ public enum Gourd implements Linable {
 
     FIVE(50, 175, 255),
 
-    SIX(114, 159, 207),
+    SIX(50/2, 175/2, 255/2),
 
-    SEVEN(173, 127, 168);
+    SEVEN(173/8, 127/8, 168/8);
 
     private final int r;
     private final int g;
