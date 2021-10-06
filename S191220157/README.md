@@ -42,9 +42,9 @@
 
 类图：![image](https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/my_line.png)
 
-排序1视频：
+排序1视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/BubbleSorter_64.mov
 
-排序2视频：
+排序2视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/QuickSorter_64.mov
 
 · 做任务二的时候才体会到示例代码中linable和position，以及Sorter写plan再在Geezer中根据plan排序的看似繁琐的设计在自然逻辑中的对应。是我太年轻了。
 
@@ -52,6 +52,7 @@
 
 类上并未做修改，类图同任务二。
 
-排序1视频：
+排序1视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/BubbleSorter_8_8.mov
 
-排序2视频：
+排序2视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/QuickSorter_8_8.mov
+
