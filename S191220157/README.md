@@ -42,7 +42,7 @@
 
 类图：![image](https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/my_line.png)
 
-排序1视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/BubbleSorter_64.mov
+排序1视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/SelectSorter_64.mov
 
 排序2视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/QuickSorter_64.mov
 
@@ -52,7 +52,7 @@
 
 类上并未做修改，类图同任务二。
 
-排序1视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/BubbleSorter_8_8.mov
+排序1视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/SelectSorter_8_8.mov
 
 排序2视频：https://github.com/jwork-2021/jw02-CDDNB/blob/master/S191220157/QuickSorter_8_8.mov
 
